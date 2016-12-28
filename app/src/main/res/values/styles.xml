@@ -1,0 +1,211 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:listDivider">@drawable/divider</item>
+    </style>
+
+
+    <style name="bottom_anim_style">
+        <item name="android:windowEnterAnimation">@anim/bottom_enter_animation</item>
+        <item name="android:windowExitAnimation">@anim/bottom_exit_animation</item>
+    </style>
+
+    <style name="smart_in_anim_style">
+        <item name="android:windowEnterAnimation">@anim/smart_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/smart_alpha_out</item>
+    </style>
+    <!--分享行-->
+    <style name="style_share_row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">20dp</item>
+    </style>
+    <!--分享按钮-->
+    <style name="style_share_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!--分享图标-->
+    <style name="style_share_icon">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!--分享文字-->
+    <style name="style_share_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+
+    <!--ProgressBar-->
+    <style name="StyleProgressBarMini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/shape_progressbar_mini</item>
+    </style>
+
+    <!--标题栏延时-->
+    <style name="style_navigation_bar">
+        <item name="android:id">@id/navigation_bar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/navigation_bar_height</item>
+        <item name="nav_has_divider">false</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!--标题栏延时-->
+    <style name="style_webNavigation_bar">
+        <item name="android:id">@id/webNavigation_bar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/navigation_bar_height</item>
+        <item name="nav_has_divider">false</item>
+        <item name="nav_has_right_title_icon">false</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!--  NAVPopupWindow_anim -->
+    <style name="mypopwindow_anim_style">
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowEnterAnimation">@anim/popup_show_anim</item>
+        <!-- 指定消失的动画xml -->
+        <item name="android:windowExitAnimation">@anim/popup_hidden_anim</item>
+    </style>
+
+    <!--图片加载主样式-->
+    <style name="image_style">
+        <!--加载图片比例类型-->
+        <item name="actualImageScaleType">focusCrop</item>
+        <!--占位图-->
+        <item name="placeholderImage">@drawable/img_image_default_l</item>
+        <!--占位图比例类型-->
+        <item name="placeholderImageScaleType">fitCenter</item>
+        <!--加载失败图-->
+        <item name="failureImage">@drawable/img_image_default_l</item>
+        <!--加载失败图比例类型-->
+        <item name="failureImageScaleType">centerInside</item>
+        <!--加载重试图比例类型-->
+        <item name="retryImageScaleType">centerCrop</item>
+        <!--加载时缓冲图比例类型-->
+        <item name="progressBarImageScaleType">centerInside</item>
+        <!--占位图比例类型-->
+        <item name="progressBarAutoRotateInterval">1000</item>
+    </style>
+    <!--4dp的圆角图片加载样式-->
+    <style name="image_round_4dp" parent="image_style">
+        <item name="roundBottomLeft">true</item>
+        <item name="roundBottomRight">true</item>
+        <item name="roundTopLeft">true</item>
+        <item name="roundTopRight">true</item>
+        <item name="roundedCornerRadius">4dp</item>
+    </style>
+    <!--10dp的圆角图片加载样式-->
+    <style name="image_round_10dp" parent="image_style">
+        <item name="roundBottomLeft">true</item>
+        <item name="roundBottomRight">true</item>
+        <item name="roundTopLeft">true</item>
+        <item name="roundTopRight">true</item>
+        <item name="roundedCornerRadius">10dp</item>
+    </style>
+    <!--圆形图片加载样式-->
+    <style name="image_circle" parent="image_style">
+        <item name="roundAsCircle">true</item>
+    </style>
+
+    <style name="WeiduText" parent="TextAppearance.AppCompat.Medium"/>
+    <!--编辑字体样式-->
+    <style name="WeiduText.EditText">
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textColorHint">#C2C2C2</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:background">@color/edit_text_background</item>
+    </style>
+
+
+    <!--LoadingHUD-->
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    <!-- divider -->
+    <style name="divider">
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:background">@color/divider_color</item>
+    </style>
+
+    <!--Crop-->
+    <style name="Crop"></style>
+
+    <style name="Crop.DoneCancelBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/crop__bar_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:divider">@drawable/crop__divider</item>
+        <item name="android:showDividers" tools:ignore="NewApi">middle</item>
+        <item name="android:dividerPadding" tools:ignore="NewApi">12dp</item>
+        <item name="android:background">@color/crop__button_bar</item>
+    </style>
+
+    <style name="Crop.ActionButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/crop__selectable_background</item>
+    </style>
+
+    <style name="Crop.ActionButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">20dp</item> <!-- Offsets left drawable -->
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textColor">@color/crop__button_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Crop.ActionButtonText.Done">
+        <item name="android:drawableLeft">@drawable/crop__ic_done</item>
+        <item name="android:text">@string/crop__done</item>
+    </style>
+
+    <style name="Crop.ActionButtonText.Cancel">
+        <item name="android:drawableLeft">@drawable/crop__ic_cancel</item>
+        <item name="android:text">@string/crop__cancel</item>
+    </style>
+
+    <style name="push_style">
+        <item name="android:hint">@string/style_hint</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="push_alias">
+        <item name="android:hint">@string/alias_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="push_tag">
+        <item name="android:hint">@string/tag_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

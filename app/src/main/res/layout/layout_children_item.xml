@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/margin_small"
+    android:paddingBottom="@dimen/margin_small">
+
+    <com.myself.rxjavasamsples.library.view.image.ImageDraweeView
+        android:id="@+id/iv_child"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        auto:roundAsCircle="true" />
+
+    <ImageView
+        android:id="@+id/iv_indicator"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_alignRight="@id/iv_child"
+        android:layout_alignTop="@id/iv_child"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/iv_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_child"
+        android:layout_alignRight="@id/iv_child"
+        android:src="@drawable/icon_16_43"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:gravity="center"
+        android:layout_below="@id/iv_child"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/text_color_646464"
+        android:textSize="@dimen/text_size_14sp" />
+
+</RelativeLayout>

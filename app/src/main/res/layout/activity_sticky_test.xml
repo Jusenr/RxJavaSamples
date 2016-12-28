@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_sticky_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.myself.rxjavasamsples.library.view.NavigationBar
+        style="@style/style_navigation_bar"
+        auto:nav_divider_color="@color/divider_color"
+        auto:nav_has_divider="true"
+        auto:nav_left_icon="@drawable/back_selector"
+        auto:nav_main_title="粘性头部测试"
+        auto:nav_right_icon="@drawable/icon_30_14"/>
+
+    <com.myself.rxjavasamsples.library.view.sticky.StickyHeaderLayout
+        android:id="@+id/shl_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sdasdfasf"
+            android:textAllCaps="false"/>
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_head_default"/>
+
+    </com.myself.rxjavasamsples.library.view.sticky.StickyHeaderLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="a_3dp">3dp</dimen>
+    <dimen name="a_5dp">5dp</dimen>
+    <dimen name="a_8dp">8dp</dimen>
+    <dimen name="a_10dp">10dp</dimen>
+    <dimen name="a_15dp">15dp</dimen>
+    <dimen name="a_20dp">20dp</dimen>
+    <dimen name="a_25dp">25dp</dimen>
+    <dimen name="a_30dp">30dp</dimen>
+    <dimen name="a_35dp">35dp</dimen>
+    <dimen name="a_40dp">40dp</dimen>
+    <dimen name="a_45dp">45dp</dimen>
+    <dimen name="a_50dp">50dp</dimen>
+    <dimen name="distance_20dp">20dp</dimen>
+    <dimen name="distance_18dp">18dp</dimen>
+    <dimen name="distance_15dp">15dp</dimen>
+    <dimen name="distance_13dp">13dp</dimen>
+    <dimen name="distance_10dp">10dp</dimen>
+    <dimen name="distance_8dp">8dp</dimen>
+    <dimen name="distance_5dp">5dp</dimen>
+    <dimen name="distance_4dp">4dp</dimen>
+    <dimen name="distance_3dp">3dp</dimen>
+
+
+    <dimen name="navigation_bar_height">48dp</dimen>
+
+    <dimen name="text_size_6sp">6sp</dimen>
+    <dimen name="text_size_8sp">8sp</dimen>
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_22sp">22sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_26sp">26sp</dimen>
+    <dimen name="text_size_28sp">28sp</dimen>
+    <dimen name="text_size_30sp">30sp</dimen>
+    <dimen name="text_size_32sp">32sp</dimen>
+
+    <dimen name="divider_height">1px</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="drawable_padding_small">4dp</dimen>
+
+    <dimen name="margin_big">15.36dp</dimen>
+
+    <dimen name="tooltip_default_arrow_height">8dp</dimen>
+    <dimen name="tooltip_default_arrow_width">16dp</dimen>
+    <dimen name="tooltip_default_corner_radius">4dp</dimen>
+    <dimen name="tooltip_default_offset">0dp</dimen>
+    <integer name="tooltip_default_arrow_location">1</integer>
+    <integer name="tooltip_default_arrow_alignment">3</integer>
+
+    <dimen name="crop__bar_height">40dp</dimen>
+</resources>

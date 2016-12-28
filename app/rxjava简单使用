@@ -1,0 +1,26 @@
+
+一，Rxjava
+使用Rxjava，需要引入以下两个包
+compile 'io.reactivex:rxjava:1.1.8'
+compile 'io.reactivex:rxandroid:1.2.1'
+纬度中使用Retrofit请求时，使用了Retrofit中的Call发起请求，然后回调返回请求结果
+final Call call = RetrofitManager.getWeiDuApi().getShakeMusic();
+HttpHelper.getInstance().newCall(call, new ApiCallback<ShakeMusic>() {
+
+替换成Rxjava,使用Rx中的Observable发起请求，同样回调返回结果
+final Observable<RetrofitBean<AppListBean>> observable = RetrofitFactory.getXingQiuApi().getAppList(map);
+HttpHelper.getInstance().newSubscribe(observable, new ApiCallback<AppListBean>() {
+为了让Retrofit的Call适配Rxjava需要在Retrofit builder时添加相应适配器
+.addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+
+发送网络请求时，Retrofit使用Call的异步方式，然后回调请求结果
+call.enqueue(new Callback<RetrofitBean<T>>() {
+Rxjava使用Observable注册观察者处理返回结果，这里可以分别设定请求执行的线程和返回请求数据的线程
+observable.subscribeOn(Schedulers.io())
+        .observeOn(AndroidSchedulers.mainThread())
+        .subscribe(new Observer<RetrofitBean<T>>() {
+
+结论：
+单纯的简单接口请求并没有显示出Rxjava的优势。
+如果有需求需要对返回的数据做中间变换处理，比如返回的String类型图片地址，转换成Bitmap再返回给接口调用处，
+这时Rxjava的强大变换优势lift和map将发挥绝对优势。

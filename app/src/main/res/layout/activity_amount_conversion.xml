@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.myself.rxjavasamsples.library.view.NavigationBar
+        style="@style/style_navigation_bar"
+        auto:nav_divider_color="@color/divider_color"
+        auto:nav_has_divider="true"
+        auto:nav_left_icon="@drawable/back_selector"
+        auto:nav_main_title="金额单位转换"
+        auto:nav_right_icon="@drawable/icon_30_14"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元>角"/>
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元>分"/>
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="角>元"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="角>分"/>
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分>元"/>
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分>角"/>
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="精确度"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/a_10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--自定义金额-->
+        <com.myself.rxjavasamsples.library.view.CleanableEditText
+            android:id="@+id/et_money"
+            style="@style/WeiduText.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:digits="0123456789."
+            android:drawableRight="@drawable/close_selector"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入金额"
+            android:inputType="number"
+            android:maxEms="6"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="@color/color_313131"
+            android:textColorHint="#c2c2c2"
+            android:textSize="@dimen/text_size_16sp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/a_10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edittext"
+        android:gravity="center_horizontal"
+        android:text="asdas"
+        android:textColor="@color/text_color_red"
+        android:textSize="@dimen/text_size_20sp"/>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e1e1">
+
+    <com.myself.rxjavasamsples.library.view.NavigationBar
+        style="@style/style_navigation_bar"
+        auto:nav_divider_color="@color/divider_color"
+        auto:nav_left_icon="@drawable/back_selector"
+        auto:nav_main_title="测加载进度条"/>
+
+    <ProgressBar
+        android:id="@+id/pb_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/navigation_bar"
+        android:max="100"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/pb_bar"
+        android:layout_marginTop="20dp"
+        android:max="100"
+        android:progressDrawable="@drawable/mabar"/>
+
+    <ProgressBar
+        android:id="@+id/pb_progressbar"
+        style="@style/StyleProgressBarMini"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_margin="30dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/shape_progressbar_bg"
+        android:max="100"
+        android:progress="50"/>
+
+    <Button
+        android:id="@+id/bt_loading_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="LoadingDialog"/>
+
+    <Button
+        android:id="@+id/bt_loading_img_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_loading_dialog"
+        android:layout_marginTop="10dp"
+        android:text="LoadingImgDialog"/>
+
+    <Button
+        android:id="@+id/bt_loading_img_dialog2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_loading_img_dialog"
+        android:layout_marginTop="10dp"
+        android:text="LoadingImgDialog2"/>
+
+
+    <Button
+        android:id="@+id/btn_webview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_loading_img_dialog2"
+        android:layout_marginTop="10dp"
+        android:text="webview"/>
+
+
+    <Button
+        android:id="@+id/btn_webview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_webview"
+        android:layout_marginTop="10dp"
+        android:text="webview2"/>
+
+</RelativeLayout>

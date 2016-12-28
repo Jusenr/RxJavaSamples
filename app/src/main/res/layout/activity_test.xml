@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:orientation="vertical">
+
+    <com.myself.rxjavasamsples.library.view.NavigationBar
+        style="@style/style_navigation_bar"
+        auto:nav_divider_color="@color/divider_color"
+        auto:nav_has_divider="true"
+        auto:nav_left_icon="@drawable/back_selector"
+        auto:nav_main_title="测试"
+        auto:nav_right_icon="@drawable/icon_12_01"/>
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/a_10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始"/>
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束"/>
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"/>
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll_1"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="孩子账号"
+            android:textColor="@color/text_color_646464"
+            android:textSize="@dimen/text_size_14sp"/>
+
+        <com.myself.rxjavasamsples.library.view.CleanableEditText
+            android:id="@+id/et_account"
+            style="@style/WeiduText.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/close_selector"
+            android:hint="2-24位中英文数字组合"
+            android:maxLength="24"
+            android:paddingLeft="0dp"
+            android:textColor="@color/color_313131"
+            android:textColorHint="@color/color_C2C2C2"
+            android:textSize="@dimen/text_size_16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/a_10dp"
+            android:orientation="vertical">
+
+            <com.myself.rxjavasamsples.library.view.image.ImageDraweeView
+                android:id="@+id/iv_icon"
+                style="@style/image_circle"
+                android:layout_width="160dp"
+                android:layout_height="110dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                auto:default_drawable="@drawable/icon_30_28"/>
+
+            <ImageView
+                android:id="@+id/iv_icon_1"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/a_10dp"
+                android:src="@drawable/img_activity_empty"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_icon_2"
+                android:layout_width="220dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/a_10dp"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="300"
+                fresco:failureImage="@drawable/img_activity_empty"
+                fresco:failureImageScaleType="fitCenter"
+                fresco:placeholderImage="@drawable/img_loadding"
+                fresco:placeholderImageScaleType="fitCenter"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_icon_3"
+            android:layout_marginTop="@dimen/a_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_activity_empty"/>
+    </LinearLayout>
+</LinearLayout>

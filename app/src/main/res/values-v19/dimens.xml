@@ -1,0 +1,4 @@
+<resources>
+    <!--<dimen name="immersive">23dp</dimen>-->
+    <dimen name="immersive">0dp</dimen>
+</resources>

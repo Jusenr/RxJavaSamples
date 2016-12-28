@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:orientation="vertical">
+
+    <com.myself.rxjavasamsples.library.view.NavigationBar
+        style="@style/style_navigation_bar"
+        auto:nav_divider_color="@color/divider_color"
+        auto:nav_has_divider="true"
+        auto:nav_left_icon="@drawable/back_selector"
+        auto:nav_main_title="Text测试"
+        auto:nav_right_icon="@drawable/icon_30_14"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/a_10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="2"/>
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="3"/>
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="4"/>
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="5"/>
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="分享1"
+            android:textSize="10sp"/>
+
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="分享2"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/a_10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="8"/>
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="9"/>
+
+        <Button
+            android:id="@+id/btn_10"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="10"/>
+
+        <Button
+            android:id="@+id/btn_11"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="11"/>
+
+        <Button
+            android:id="@+id/btn_12"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="12"/>
+
+        <Button
+            android:id="@+id/btn_13"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="13"/>
+
+        <Button
+            android:id="@+id/btn_14"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="14"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:text=""
+        android:textColor="@color/text_color_985EC9"/>
+
+    <FrameLayout
+        android:id="@+id/fl_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/crop__bar_height"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="30dp">
+
+        <!--自定义金额-->
+        <EditText
+            android:id="@+id/et_wallet_money"
+            style="?android:attr/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_edittext"
+            android:digits="@string/wallet_et_wallet_custom_amount"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/wallet_custom_amount"
+            android:inputType="number"
+            android:maxEms="6"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="@color/color_313131"
+            android:textColorHint="#c2c2c2"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <TextView
+            android:id="@+id/tv_pt_coin"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginLeft="190dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="=10葡萄币"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_14sp"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <!--立即充值-->
+    <Button
+        android:id="@+id/btn_wallet_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_los_focus"
+        android:clickable="false"
+        android:text="立即充值"
+        android:textColor="#fff"
+        android:textSize="@dimen/text_size_16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_edittext"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_effect_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/a_10dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="1dp"
+            android:lines="3"
+            android:text=""/>
+
+    </LinearLayout>
+
+</LinearLayout>

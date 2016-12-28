@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:auto="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <!--right-->
+    <RelativeLayout
+        android:id="@+id/rl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingRight="@dimen/margin_small">
+
+        <!--right_title-->
+        <TextView
+            android:id="@+id/right_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small"
+            android:text="right"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size_16sp"
+            android:visibility="gone"/>
+
+        <!--right_title_icon-->
+        <LinearLayout
+            android:id="@+id/ll_right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.myself.rxjavasamsples.library.view.image.ImageDraweeView
+                android:id="@+id/iv_right_icon_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:clickable="true"
+                android:src="@drawable/icon_40_14"
+                auto:roundingBorderColor="@color/white"
+                auto:roundingBorderWidth="2dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_right_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_right_red_dot"
+                    style="@style/image_circle"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignTop="@+id/iv_right_icon"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="@dimen/distance_5dp"
+                    android:src="@color/text_color_red"
+                    android:visibility="visible"/>
+
+
+                <com.myself.rxjavasamsples.library.view.image.ImageDraweeView
+                    android:id="@+id/iv_right_icon"
+                    style="@style/image_circle"
+                    android:layout_width="44dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="14dp"
+                    android:clickable="true"
+                    android:src="@drawable/img_head_default_kid"
+                    auto:default_drawable="@drawable/img_head_default_kid"
+                    auto:roundAsCircle="true"
+                    auto:roundingBorderColor="@color/white"
+                    auto:roundingBorderWidth="2dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_more_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_right_icon"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="-18dp"
+                    android:layout_toRightOf="@id/iv_right_icon"
+                    android:src="@drawable/btn_arrow_down"
+                    android:visibility="visible"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

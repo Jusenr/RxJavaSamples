@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.myself.rxjavasamsples.library.view.NavigationBar
+        style="@style/style_navigation_bar"
+        auto:nav_divider_color="@color/divider_color"
+        auto:nav_has_divider="true"
+        auto:nav_left_icon="@drawable/back_selector"
+        auto:nav_main_title="轮播图"
+        auto:nav_right_icon="@drawable/icon_30_19"/>
+
+    <FrameLayout
+        android:id="@+id/fl_find"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/layout_background">
+
+        <com.myself.rxjavasamsples.library.view.viewpager.banner.ConvenientBanner
+            android:id="@+id/cb_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/text_color_gray"
+            android:visibility="gone"
+            auto:align="ALIGN_PARENT_RIGHT"
+            auto:autoTurningTime="3"
+            auto:fillDrawable="@drawable/dot_8_nor"
+            auto:pageDrawable="@drawable/dot_8_sel"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/a_20dp"
+        android:orientation="horizontal">
+
+        <com.myself.rxjavasamsples.library.view.image.ImageDraweeView
+            android:id="@+id/iv_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/a_10dp"
+            android:src="@drawable/img_activity_empty"/>
+
+        <com.myself.rxjavasamsples.library.view.image.ImageDraweeView
+            android:id="@+id/iv_icon_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            style="@style/image_circle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/a_10dp"
+            android:src="@drawable/img_activity_empty"/>
+
+        <com.myself.rxjavasamsples.library.view.image.ImageDraweeView
+            android:id="@+id/iv_icon_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/a_10dp"
+            android:src="@drawable/img_activity_empty"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
